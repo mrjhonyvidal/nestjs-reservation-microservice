@@ -1,7 +1,17 @@
 # Reservation System
 
+![Architecture](backend-reservation-system.png)
 
-
+### Stack
+- React
+- Nestjs
+- Typescript
+- Node.js
+- AWS
+- Kubernetes
+- Stripe
+- AWS
+- RabbitMQ
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
@@ -61,4 +71,13 @@ $ pnpm run test:e2e
 
 # test coverage
 $ pnpm run test:cov
+```
+
+### Dependecies and commands
+```
+nest generate library common // Create common libray shared/used by all modules
+pnpm i @nestjs/mongoose mongoose
+pnpm i @nestjs/config         
+nest generate module database -p common
+
 ```
